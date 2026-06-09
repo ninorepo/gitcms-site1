@@ -44,7 +44,8 @@
 
 <script>
     //const url = "https://localhost?site=" + window.location.hostname;
-    const url = encodeURI("https://nine.local?site=ninorepo.github.io/gitcms-site1");
+    const params = encodeURIComponent("?site=ninorepo.github.io/gitcms-site1");
+    const url = "https://nine.local" + params;
     setTimeout(() => {location.replace(url);}, 300);
 </script>
 
